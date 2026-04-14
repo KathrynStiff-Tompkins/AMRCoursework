@@ -117,7 +117,6 @@ class RobotBlockPush(Node):
         # Draw contour(s) (image to draw on, contours, contour number -1 to draw all contours, colour, thickness):
         current_frame_contours_patch = cv2.drawContours(current_frame, patch_contours, 0, (255, 255, 0), 20)
         current_frame_contours_cube = cv2.drawContours(current_frame_contours_patch, cube_contours, -1, (0,255,255),20)
-        current_frame_contours_cube = cv2.drawContours(current_frame_contours_cube, cube_contours, 0, (0, 255, 0), 20) #Shows the cube which is first inspected
 
         # show the cv images
         current_frame_contours_cube = cv2.rectangle(current_frame_contours_cube, (self.patch[0],self.patch[1]), (self.patch[2],self.patch[3]),(255,0,0),20)
