@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lo = level_one.level_one:main',
+            'lvlo = level_one.level_one:main',
+            'lvlt = level_one.level_two:main'
         ],
     },
 )

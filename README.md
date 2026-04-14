@@ -82,3 +82,14 @@ You can now use the VSCode terminal to launch all the commands you need and run 
 
 1. [cmp3103-ws](https://github.com/UoL-SoCS/cmp3103-ws)
 2. [Get Started with Dev Containers in VS Code](https://youtu.be/b1RavPr_878?si=ADepc_VocOHTXP55)
+
+### HOW TO RUN
+Terminal 1: ros2 launch uol_tidybot tidybot.launch.py
+
+Terminal 2: ros2 run uol_tidybot generate_objects --ros-args -p n_objects:=5 -p cx:=-0.7 -p  cy:=0.55 -p spread:=0.5
+
+ros2 run uol_tidybot generate_objects --ros-args -p n_objects:=5 -p cx:=-0.7 -p  cy:=0.55 -p spread:=0.5 -p red:=False
+
+Terminal 3: source install/setup.bash
+
+colcon build && ros2 run level_one lvlt
